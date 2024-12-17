@@ -1,0 +1,15 @@
+.container {
+  @apply w-full h-11 rounded-xl text-center leading-5 transition-all flex items-center justify-center border border-gray-70;
+}
+.container.active {
+  @apply bg-white cursor-pointer;
+}
+.container.active:hover {
+  @apply bg-gray-70;
+}
+.container.active:active {
+  @apply bg-gray-400;
+}
+.container.disable {
+  @apply text-neutral-400 bg-white cursor-default;
+}

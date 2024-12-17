@@ -1,0 +1,28 @@
+.container {
+  @apply w-full h-10 rounded-lg text-center flex items-center justify-center;
+  font-size: 14px;
+}
+.container.primary {
+  @apply text-white;
+}
+.container.secondary {
+  @apply text-sky-600;
+}
+.container.active {
+  @apply cursor-pointer;
+}
+.container.disable {
+  @apply cursor-default bg-neutral-400;
+}
+.container.primary.active {
+  @apply bg-sky-600;
+}
+.container.secondary.active {
+  @apply bg-white;
+}
+.container.primary.active:hover {
+  @apply lg:bg-sky-700;
+}
+.container.secondary.active:hover {
+  @apply lg:bg-gray-400;
+}

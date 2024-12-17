@@ -1,0 +1,45 @@
+.container {
+  @apply w-full min-h-11 rounded-xl text-center flex items-center justify-center px-4 py-1;
+}
+.container.primary {
+  @apply text-white;
+}
+.container.red {
+  @apply text-white;
+}
+.container.secondary {
+  @apply text-sky-600;
+}
+.container.active {
+  @apply cursor-pointer;
+}
+.container.disable {
+  @apply cursor-default bg-neutral-400;
+}
+.container.primary.active {
+  @apply bg-sky-600;
+}
+.container.secondary.active {
+  @apply bg-blue-150;
+}
+.container.red.active {
+  @apply bg-red-300;
+}
+.container.primary.active:hover {
+  @apply lg:bg-blue-300;
+}
+.container.secondary.active:hover {
+  @apply lg:bg-sky-300;
+}
+.container.red.active:hover {
+  @apply lg:bg-red-350;
+}
+.container.primary.active:active {
+  @apply bg-sky-700;
+}
+.container.secondary.active:active {
+  @apply bg-sky-400;
+}
+.container.red.active:active {
+  @apply bg-red-400;
+}

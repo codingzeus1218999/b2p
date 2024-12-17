@@ -1,0 +1,9 @@
+.container {
+  @apply rounded-xl px-3 border flex items-center justify-between h-11 cursor-pointer;
+}
+.container.active {
+  @apply border-gray-50 lg:hover:border-white transition-all active:border-gray-50 active:shadow-custom-4 lg:hover:shadow-custom-1 active:bg-gray-50;
+}
+.container.disable {
+  @apply border-gray-50 text-neutral-400;
+}

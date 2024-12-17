@@ -1,0 +1,48 @@
+@keyframes fill {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes fill_reverse {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+.progressItem {
+  @apply flex h-full;
+}
+.progressItem .whiteSection {
+  @apply h-full bg-white;
+}
+.progressItem .graySection {
+  @apply h-full;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.progressItem.passed .whiteSection {
+  @apply w-full;
+}
+.progressItem.passed .graySection {
+  @apply w-0;
+}
+
+.progressItem.forward .whiteSection {
+  @apply w-0;
+}
+.progressItem.forward .graySection {
+  @apply w-full;
+}
+
+.progressItem.current .whiteSection {
+  animation: fill linear forwards;
+}
+.progressItem.current .graySection {
+  animation: fill_reverse linear forwards;
+}

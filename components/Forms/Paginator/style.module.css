@@ -1,0 +1,33 @@
+.container {
+  @apply flex justify-center -mx-2 items-center w-full;
+}
+.container > * {
+  @apply mx-2;
+}
+.numberContainer {
+  @apply flex justify-center items-center -mx-1 flex-wrap;
+}
+.numberContainer > * {
+  @apply mx-1;
+}
+.item {
+  @apply w-8 h-8 flex justify-center items-center rounded border text-zinc-200 text-sm font-light border-gray-50 bg-white cursor-pointer transition-all;
+}
+.item.active {
+  @apply border-sky-600 text-sky-600 bg-blue-50;
+}
+.item:hover {
+  @apply lg:border-sky-600 lg:text-sky-600 lg:bg-blue-50;
+}
+.item.arrow {
+  @apply w-11 min-w-11;
+}
+.item.disabled {
+  @apply !cursor-default;
+}
+@media (min-width: 1024px) {
+  .item.arrow {
+    width: 64px;
+    min-width: 64px;
+  }
+}

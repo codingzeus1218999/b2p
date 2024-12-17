@@ -1,0 +1,9 @@
+.container {
+  @apply py-3 px-4 lg:py-4 rounded-lg bg-white shadow-custom-1 flex justify-between cursor-pointer;
+}
+.container .leftSection {
+  @apply flex;
+}
+.container .info {
+  @apply flex flex-col justify-between;
+}

@@ -1,0 +1,31 @@
+.switch {
+  @apply bg-neutral-400 border-none rounded-100px cursor-pointer h-5 relative;
+  width: 32.9px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.switch:focus,
+.switch:active {
+  @apply outline-none;
+}
+.switch::-moz-focus-inner {
+  @apply border-none;
+}
+
+.pin {
+  @apply bg-white rounded-full;
+  height: 17.4px;
+  width: 17.4px;
+  left: 1.29px;
+  position: absolute;
+  top: 1.29px;
+  transition: left ease 0.5s;
+}
+
+.switch.on {
+  @apply bg-sky-600;
+}
+
+.switch.on .pin {
+  left: 14.19px;
+}

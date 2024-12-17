@@ -1,0 +1,35 @@
+.skeleton {
+  background-color: #ddd;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -50px;
+  height: 100%;
+  width: 50px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    #f0f0f0 50%,
+    transparent 100%
+  );
+  animation: loading 3s infinite;
+}
+
+@keyframes loading {
+  0% {
+    left: -50px;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}

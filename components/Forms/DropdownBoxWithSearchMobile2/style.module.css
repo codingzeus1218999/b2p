@@ -1,0 +1,18 @@
+.modal {
+  @apply relative;
+}
+.container {
+  @apply bg-white top-0 left-0;
+  z-index: 255;
+  height: 100dvh;
+  padding: 16px 6px 84px 16px;
+  position: fixed;
+  width: 100vw;
+}
+.btnContainer {
+  @apply px-4 w-full bottom-0 fixed;
+  z-index: 256;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  left: 0;
+}

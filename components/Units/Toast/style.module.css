@@ -1,0 +1,17 @@
+.container {
+  @apply rounded-lg flex items-center cursor-pointer;
+  padding: 6px 16px;
+  min-height: 40px;
+}
+.container.warning {
+  @apply bg-yellow-50;
+}
+.container.success {
+  @apply bg-green-50;
+}
+.container.error {
+  @apply bg-red-50;
+}
+.container.info {
+  @apply bg-blue-50;
+}

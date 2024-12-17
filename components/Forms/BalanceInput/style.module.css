@@ -1,0 +1,21 @@
+.container {
+  @apply rounded px-3 flex items-center justify-between h-12;
+}
+.container.init {
+  @apply bg-gray-100 border-gray-100 border;
+}
+.container.focus {
+  @apply bg-white border-sky-600 border;
+}
+.container input {
+  @apply flex-1 text-xl font-semibold leading-none min-w-3;
+}
+.container.init input {
+  @apply bg-gray-100 text-red-300;
+}
+.container.focus input {
+  @apply text-sky-600 bg-white;
+}
+.container span {
+  @apply text-zinc-200;
+}

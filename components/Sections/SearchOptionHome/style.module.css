@@ -1,0 +1,12 @@
+.formBar {
+  @apply mt-4 rounded-lg bg-sky-600 flex items-center justify-between;
+  padding: 2px;
+  height: 60px;
+}
+.formBar .formContainer {
+  @apply flex-1 bg-gray-200 rounded-lg grid grid-cols-7 h-full items-center;
+  gap: 2px;
+}
+.formBar .btn {
+  @apply text-white px-9 cursor-pointer h-full flex items-center justify-center;
+}

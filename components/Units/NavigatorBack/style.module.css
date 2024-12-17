@@ -1,0 +1,12 @@
+.container {
+  @apply p-4;
+}
+.container .containerMain {
+  @apply flex flex-row items-center text-sky-600 w-fit cursor-pointer;
+}
+.container .containerMain div:first-child {
+  @apply text-2xl font-semibold;
+}
+.container .containerMain div:last-child {
+  @apply text-base font-normal;
+}

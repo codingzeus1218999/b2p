@@ -1,0 +1,8 @@
+.container {
+  @apply grid grid-cols-2 bg-gray-200 items-center;
+  height: 56px;
+  gap: 2px;
+}
+.subContainer {
+  @apply flex justify-between items-center gap-1 bg-white h-full;
+}

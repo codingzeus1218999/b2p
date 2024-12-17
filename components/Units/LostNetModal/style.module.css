@@ -1,0 +1,5 @@
+.container {
+  background: rgba(12, 44, 75, 0.64);
+  backdrop-filter: blur(4px);
+  z-index: 1255;
+}

@@ -1,0 +1,12 @@
+.container {
+  @apply w-full lg:h-11 h-auto rounded-xl py-2.5 uppercase font-medium leading-5 transition-all text-xs;
+}
+.container.active {
+  @apply bg-blue-150 text-indigo-80 cursor-pointer;
+}
+.container.active:hover {
+  @apply lg:bg-sky-200;
+}
+.container.disable {
+  @apply bg-zinc-100 text-neutral-400 cursor-default;
+}

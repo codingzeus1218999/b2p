@@ -1,0 +1,10 @@
+.container {
+  @apply p-0.5 rounded-xl bg-sky-50 flex;
+}
+.container .item {
+  @apply text-center rounded-10px px-3 py-2 w-124px lg:w-142px text-sm leading-4 cursor-pointer transition-all;
+}
+.container .item:hover,
+.container .item.active {
+  @apply text-sky-600 bg-white shadow-custom-2;
+}

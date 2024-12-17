@@ -1,0 +1,39 @@
+.container {
+  @apply rounded-full relative;
+  animation: rotate 1s linear infinite;
+}
+.container.blue {
+  background-image: conic-gradient(#1976d2, #1976d200);
+}
+.container.white {
+  background-image: conic-gradient(#ffffff, #ffffff00);
+}
+.inner {
+  @apply w-full h-full rounded-full z-10;
+}
+.inner .blurSection {
+  background: rgba(12, 44, 75, 0.64);
+  backdrop-filter: blur(4px);
+  z-index: 1255;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.pointer {
+  @apply absolute top-0 rounded-full left-1/2;
+  transform: translateX(-2px);
+}
+.blue .pointer {
+  @apply bg-sky-600;
+}
+.white .pointer {
+  @apply bg-white;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

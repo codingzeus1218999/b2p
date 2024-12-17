@@ -1,0 +1,23 @@
+.container {
+  cursor: pointer;
+  padding: 1px;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #60afff, #4791db, #418cd7, #a8d3ff);
+  width: 84px;
+  height: 84px;
+}
+.content {
+  @apply rounded-xl border relative bg-white;
+  padding: 2px;
+  width: 82px;
+  height: 82px;
+}
+.title {
+  @apply absolute uppercase text-white font-semibold;
+  left: 7px;
+  bottom: 7px;
+  font-size: 10px;
+  line-height: 10px;
+  width: 68px;
+  white-space: pre-wrap;
+}

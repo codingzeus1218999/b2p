@@ -1,0 +1,25 @@
+.container {
+  background: rgba(12, 44, 75, 0.64);
+  backdrop-filter: blur(4px);
+  z-index: 1255;
+}
+
+.progressBg {
+  @apply bg-sky-600 h-2 w-0;
+  animation: progress-animation 40s forwards;
+}
+
+@keyframes progress-animation {
+  0% {
+    width: 0;
+  }
+  60% {
+    width: 90%;
+  }
+  80% {
+    width: 95%;
+  }
+  100% {
+    width: 95%;
+  }
+}

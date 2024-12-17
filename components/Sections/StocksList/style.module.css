@@ -1,0 +1,30 @@
+.item {
+  @apply justify-between rounded-xl px-3 lg:pl-4 h-11 items-center;
+}
+.item.filtered {
+  @apply bg-sky-50;
+}
+.item.non_filtered {
+  @apply border border-gray-50;
+}
+.item:hover {
+  @apply bg-white border border-sky-600;
+}
+.item.active {
+  @apply border-sky-600 bg-blue-50 lg:pr-1.5 hidden lg:flex;
+}
+.buyBtn {
+  @apply text-white px-4 flex text-sm text-center h-8 items-center bg-sky-600 cursor-pointer rounded-lg justify-center w-full lg:w-fit hover:lg:bg-blue-300;
+  min-width: 143px;
+}
+.spinner {
+  animation: rotate 1s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

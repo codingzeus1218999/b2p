@@ -1,0 +1,13 @@
+.container {
+  @apply flex justify-start items-start flex-row;
+}
+.item {
+  @apply font-normal text-base pb-1 cursor-pointer !border-b-white;
+  border-bottom: 2px solid;
+}
+.item.disabled {
+  @apply text-neutral-400 cursor-default;
+}
+.item.active {
+  @apply text-sky-600 !border-b-sky-600;
+}

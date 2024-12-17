@@ -1,0 +1,9 @@
+.input {
+  @apply w-10 h-12 text-center border border-gray-100 rounded-lg bg-gray-100 font-semibold text-xl focus:border-sky-600 focus:text-sky-600;
+}
+.input.first {
+  @apply border-neutral-200 focus:border-sky-600;
+}
+.input.filled {
+  @apply text-neutral-400;
+}

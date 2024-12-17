@@ -1,0 +1,15 @@
+.modal {
+  @apply relative;
+}
+.container {
+  @apply bg-white rounded-lg w-full top-0;
+  box-shadow: "0px 4px 24px 0px rgba(25, 118, 210, 0.16)";
+  z-index: 255;
+}
+.btnContainer {
+  @apply px-4 w-full bottom-0;
+  position: fixed;
+  z-index: 256;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
